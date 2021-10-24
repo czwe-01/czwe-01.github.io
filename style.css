@@ -220,6 +220,7 @@ p,
 
 /* about section */
 .about {
+  margin-top: 100px;
   width: 100%;
   height: auto;
   padding: 50px 10vw;
@@ -302,6 +303,8 @@ p,
   width: 85vw;
   min-height: 250px;
   font-family: Consolas;
+  border-radius: 10px;
+  border: 1px solid #464646;
 
   border-radius: 10px;
   box-shadow: -1px -18px 45px 7px rgba(0, 0, 0, 0.88);
@@ -317,7 +320,7 @@ p,
 
 .skill-card:hover ~ .skill-card,
 .skill-card:focus-within ~ .skill-card {
-  transform: translateY(calc(var(--distance) * -1));
+  transform: translateY(calc((var(--distance)-75px) * -1));
 }
 
 .skill {
@@ -339,7 +342,6 @@ p,
   font-size: 0.82rem;
   padding: 2rem;
 }
-
 .skill-card:hover .skill {
   color: #fff;
 }
