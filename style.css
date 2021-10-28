@@ -196,7 +196,18 @@ a > span:hover:after {
 .page-section {
   padding-top: 100px;
   padding-bottom: 20px;
-  background: var(--bg);
+  background: #bbd2c5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #536976,
+    #bbd2c5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #536976,
+    #bbd2c5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   overflow-x: visible;
 }
 
@@ -393,7 +404,7 @@ p,
   font-size: 0.82rem;
   text-align: center;
   padding: 1rem 2rem;
-  height: 150px;
+  height: 120px;
 }
 .project-card:hover .project,
 .project-card:hover .project-description {
@@ -417,8 +428,46 @@ p,
   text-transform: lowercase;
   font-size: x-small;
   color: var(--tc);
+  bottom: 10px;
 }
-.project-btn > a {
-  text-decoration: none;
-  color: var(--tc);
+
+.project-link:hover {
+  border: 1px solid #fff;
+  color: #d3d3d3;
+}
+
+/* Skills Section */
+.skills {
+  font-family: Consolas;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em;
+  justify-content: space-between;
+}
+
+.skill {
+  margin-top: 2em;
+  border: 1px solid #565656;
+  height: max-content;
+  width: 100%;
+  border-radius: 10px;
+  text-transform: lowercase;
+  font-size: x-small;
+  display: flex;
+}
+.skill > p {
+  padding: 10px;
+  text-align: justify;
+  width: 100%;
+  padding-left: 38px;
+  border-radius: 0 10px 10px 0;
+}
+
+.skill > img {
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--grad);
+  background: var(--grad);
+  border-radius: 10px 0 0 10px;
+  /* filter: grayscale(100%); */
 }
