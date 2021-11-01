@@ -8,7 +8,7 @@
     <title>T.Nkambule</title>
   </head>
   <body>
-    <nav role="navigation" class="navbar" style="--bg:#1d1d1d; --tc:#fff;">
+    <nav role="navigation" class="navbar" style="--bg:#000000; --tc:#fff;">
     </div class="logo"><p>TN</p></div>
       <div id="menuToggle">
         <input type="checkbox" id="checkbox"/>
@@ -19,11 +19,11 @@
         <ul id="menu">
           <a href="#home" class="menu-item"><span><li>Home</li></span></a>
           <a href="#about" class="menu-item"><span><li>About</li></span></a>
-          <a href="#projects" class="menu-item"><span><li>projects</li></span></a>
+          <a href="#skills" class="menu-item"><span><li>Skills</li></span></a>
           <a href="#projects" class="menu-item"><span><li>Projects</li></span></a>
           <a href="#contact" class="menu-item"><span><li>Contacts</li></span></a>
 
-          <div>
+          <div class="social-media">
           <a href="#" class="fa fa-linkedin"></a>
           <a href="#" class="fa fa-github"></a>
           <a href="#" class="fa fa-gmail"></a>
@@ -42,7 +42,7 @@
           </h1>
           <p class="sub-heading" style="--bg:#a9a9a9; --tc:#dfdce3; z-index: 2;">Web Dev</p>
           <p class="info">
-            undergraduate who is looking to join a team/company that will help me advance my project as I strive to be a
+           Lorem ipsum dolor sit amet consectetur, adipisicing elit. In ipsam veniam corporis.
           </p>
         </div>
           <a href="#contact-section" class="btn" style="--bg:#6b7a8f; --tc:#e5e5e5;">
@@ -79,8 +79,8 @@
           </div>
         </div>
     </section>
-    <section class="skill-section" id="skill" style="--bg:#e7dfdd;">
-        <h2 class="heading" id="projects">skill<span class="highlight">s</span></h2>
+    <section class="skill-section" id="skill">
+        <h2 class="heading" id="skills">skill<span class="highlight">s</span></h2>
         <p class="sub-heading" style="--bg:#1d1d1d; --tc:#fff;">Languages and frameworks</p>
         <div class="skills">
             <div class="skill" style="--tc:#ff5e00e8; --grad:#e65100;"><img src="https://img.icons8.com/color/48/000000/html-5--v1.png"   style="--grad:#e65100;"/><p style="--grad:#e65100; --grd1:#fff;">Html 5</p></div>
@@ -110,9 +110,72 @@
             <a href="https://codepen.io/czwe_01/pen/xBQqrj" class ="project-link">explore </a>
           </div>
         </div>
+        <div class="project-card">
+            <div class="project-year">2020</div>
+          <p class="project">Ladie's In Hygiene
+            <div class="project-tags">
+            <div class="project-tag" style="--tc:#ff5e00e8;"><>html</div>
+            <div class="project-tag" style="--tc:#2478d8e8;">#css</div>
+            <div class="project-tag" style="--tc:#e2df0ce8;">#.js</div>
+          </div>
+          </p>
+          
+          <p class="project-description">This is a free code camp project. It's responsive tribute page.</p>
+          <div  class="link-holder"  style="--tc:#565656;">
+            <a href="https://ladiesinhygiene.netlify.app/" class ="project-link">explore </a>
+          </div>
+        </div>
+        <div class="project-card">
+            <div class="project-year">2020</div>
+          <p class="project">My Tribute Page
+            <div class="project-tags">
+            <div class="project-tag" style="--tc:#ff5e00e8;"><>html</div>
+            <div class="project-tag" style="--tc:#2478d8e8;">#css</div>
+            <div class="project-tag" style="--tc:#e2df0ce8;">#.js</div>
+          </div>
+          </p>
+          
+          <p class="project-description">This is a free code camp project. It's responsive tribute page.</p>
+          <div  class="link-holder"  style="--tc:#565656;">
+            <a href="https://codepen.io/czwe_01/pen/xBQqrj" class ="project-link">explore </a>
+          </div>
+        </div>
 
       </div>
     </section>
-    
+    <section class="contact-section" id="contact">
+          <h2 class="heading" id="skills">Contact<span class="highlight">Me</span></h2>
+        <p class="sub-heading">Let's get started</p>
+        
+
+        <form class="contact-form" onSubmit={sendEmail}>
+      <div class="name">
+        <input
+          type="text"
+          required
+          class="first-name"
+          placeholder="first name"
+          name="name"
+        />
+        <input
+          type="text"
+          required
+          class="c"
+          placeholder="Last name"
+          name="last_name"
+        />
+      </div>
+      <input type="email" class="email" placeholder="email" name="email" />
+      <textarea
+        class="message"
+        placeholder="message"
+        required
+        name="message"
+      ></textarea>
+      <input type="submit" class="btn contact-btn" value="Contact" />
+    </form>
+      </section>
   </body>
+  <footer class="footer">made with love by Thulasizwe Nkambule</footer>
+
 </html>
