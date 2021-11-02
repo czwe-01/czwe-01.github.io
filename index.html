@@ -35,22 +35,20 @@
     </nav>
     <section class="page-section" id="home" style="--bg:#efefef; --tc:#6b7a8f;">
         <div class="page-content">
-            <div><img src="images/pic8.jpg" alt="logo image"  class="home-image"/>
-</div>
+
         <div class="page-intro"><h1 class="heading">
             <span class="highlight">Hi, </span>i am Thulasizwe
           </h1>
           <p class="sub-heading" style="--bg:#a9a9a9; --tc:#dfdce3; z-index: 2;">Web Dev</p>
-          <p class="info">
+                      <div><img src="images/home-pic.png" alt="logo image"  class="home-image"/></div>
+          <div class="info">
            Lorem ipsum dolor sit amet consectetur, adipisicing elit. In ipsam veniam corporis.
-          </p>
+          </div>
         </div>
-          <a href="#contact-section" class="btn" style="--bg:#6b7a8f; --tc:#e5e5e5;">
-            contact
-          </a>
-        
         </div>
-
+        <a href="#contact-section" class="btn home-btn" style="--bg:#6b7a8f; --tc:#e5e5e5;">
+                    contact
+        </a>
     </section>
     <section class="about" id="about" style="--bg:#dfdce3; --tc:#6b7a8f;">
         <h2 class="heading">
@@ -148,7 +146,7 @@
         <p class="sub-heading">Let's get started</p>
         
 
-        <form class="contact-form" onSubmit={sendEmail}>
+        <form class="contact-form" onSubmit=sendEmail>
       <div class="name">
         <input
           type="text"
@@ -179,3 +177,28 @@
   <footer class="footer">made with love by Thulasizwe Nkambule</footer>
 
 </html>
+
+
+<script>
+  // Contact section
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_15enpfv",
+        "template_09q2zkr",
+        e.target,
+        "user_7sNHu6IeC6K4aFaPPsNyO"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  }
+</script>
