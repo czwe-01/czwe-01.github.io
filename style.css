@@ -103,15 +103,16 @@ a > span:hover:after {
   user-select: none;
 }
 
-#menuToggle a {
+#menuToggle a,
+#menuToggle > .social-media a {
   text-decoration: none;
-  color: #ededed;
-
+  color: #d19b9b;
   transition: color 0.3s ease;
 }
 
 #menuToggle a:hover {
-  color: #ededed;
+  color: #fff;
+  transform: scale(1.1);
 }
 
 #menuToggle input {
@@ -218,20 +219,11 @@ a > span:hover:after {
 .page-section {
   padding: 50px 10vw;
   width: calc(100%-4px);
-  /* background: linear-gradient(
-    to bottom,
-    #5a0013,
-    #580116,
-    #550218,
-    #53031a,
-    #50041c
-  ); */
   overflow-x: visible;
 }
 
 .home-image {
   width: 40%;
-  /* border: 0.5px solid #000000; */
   border-radius: 50%;
   margin: 20px;
 }
@@ -304,8 +296,8 @@ p,
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 50px;
-  background: var(--bg);
-  color: var(--tc);
+  background: #000000;
+  color: #fff;
   text-transform: capitalize;
   border: none;
 }
@@ -315,15 +307,6 @@ p,
   width: calc(100%-4px);
   padding: 50px 10vw;
   font-size: small;
-  /* background-image: linear-gradient(
-    to bottom,
-    #50041c,
-    #4b0720,
-    #450a23,
-    #3e0d25,
-    #380f26
-  ); */
-  /* color: var(--tc); */
 }
 
 .heading {
@@ -336,7 +319,6 @@ p,
 .about-image {
   width: 100%;
   border-radius: 5%;
-  /* box-shadow: 0 0px 10px rgba(0, 0, 0, 0.25); */
 }
 
 .about-para {
@@ -358,14 +340,6 @@ p,
   padding-top: 100px;
   align-items: center;
   color: var(--tc);
-  /* background-image: linear-gradient(
-    to bottom,
-    #271424,
-    #231422,
-    #201421,
-    #1d141e,
-    #1a141c
-  ); */
 }
 
 .project-container {
@@ -379,7 +353,7 @@ p,
   flex-direction: column;
   display: flex;
   background: #090909;
-  min-width: 300px;
+  min-width: 275px;
   width: 85vw;
   min-height: 250px;
   border-radius: 10px;
@@ -422,10 +396,6 @@ p,
   text-align: center;
   text-transform: lowercase;
   font-size: x-small;
-}
-
-.space {
-  right: 2px;
 }
 
 .project-card:hover {
@@ -482,14 +452,6 @@ p,
   margin: 2px;
   padding: 50px 10vw;
   margin-top: 100px;
-  /* background-image: linear-gradient(
-    to bottom,
-    #380f26,
-    #341126,
-    #2f1226,
-    #2b1325,
-    #271424
-  ); */
 }
 .skills {
   font-family: Consolas;
@@ -543,14 +505,6 @@ p,
     #510414,
     #5a0013
   );
-  /* background-image: linear-gradient(
-    to bottom,
-    #1a141c,
-    #181219,
-    #161017,
-    #130e14,
-    #100c11
-  ); */
 
   margin-top: 100px;
 }
@@ -604,7 +558,7 @@ p,
 }
 .contact-btn {
   width: fit-content !important;
-  background-color: #fc5562 !important;
+  background-color: #3d0005 !important;
 }
 
 /* Footer */

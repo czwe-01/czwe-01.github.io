@@ -9,7 +9,7 @@
   </head>
   <body>
     <nav role="navigation" class="navbar" style="--bg:#000000; --tc:#fff;">
-    </div class="logo"><p>TN</p></div>
+    <div class="logo"><p>TN</p></div>
       <div id="menuToggle">
         <input type="checkbox" id="checkbox"/>
         <span></span>
@@ -24,10 +24,9 @@
           <a href="#contact" class="menu-item"><span><li>Contacts</li></span></a>
 
           <div class="social-media">
-          <a href="#" class="fa fa-linkedin"></a>
-          <a href="#" class="fa fa-github"></a>
-          <a href="#" class="fa fa-gmail"></a>
-          <a href="#" class="fa fa-instagram"></a>
+          <a href="https://www.linkedin.com/in/thulasizwe-nkambule-843688138/" class="fa fa-linkedin"><span></span></a>
+          <a href="https://github.com/czwe-01" class="fa fa-github"><span></span></a>
+          <a href="https://www.tnkambule980115@gmail.com" class="fa fa-envelope"><span></span></a>
         </div>
         </ul>
         
@@ -42,15 +41,15 @@
           <p class="sub-heading" style="--bg:#a9a9a9; --tc:#dfdce3; z-index: 2;">Web Dev</p>
                       <div><img src="images/home-pic.png" alt="logo image"  class="home-image"/></div>
           <div class="info">
-           Lorem ipsum dolor sit amet consectetur, adipisicing elit. In ipsam veniam corporis.
+           I am a undergraduate who is looking to create the best partnership with a business looking to excel online. 
           </div>
         </div>
         </div>
-        <a href="#contact-section" class="btn home-btn" style="--bg:#6b7a8f; --tc:#e5e5e5;">
+        <a href="#contact-section" class="btn home-btn">
                     contact
         </a>
     </section>
-    <section class="about" id="about" style="--bg:#dfdce3; --tc:#6b7a8f;">
+    <section class="about" id="about">
         <h2 class="heading">
           about <span class="highlight">me</span>
         </h2>
@@ -68,7 +67,7 @@
               standards guidelines I am a fast learner; I possess excellent
               problem solving projects, and I can manage a significant work load,
               I always go above and beyond duty, and I will make sure that I
-              take responsibility for my ongoing sub-headingal development. When
+              take responsibility for my ongoing professional development. When
               I'm not coding I'm a big soccer fan both on and off the field.
             </p>
             <a href="Tnkambule.pdf" class="btn download-btn" download>
@@ -87,6 +86,7 @@
             <div class="skill" style="--tc:#2478d8e8;--grad:#00549D;"><img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" style="--grad:#00549D;"/><p style="--grad:#00549D; --grd1:#fff;">c++</p></div>
             <div class="skill" style="--tc:#2478d8e8;--grad:#E65100;"><img src="https://img.icons8.com/color/48/000000/kotlin.png" style="--grad:#cf9f9a;"/><p  style="--grad:#E65100; --grd1:#fff;">kotlin</p></div>
             <div class="skill" style="--tc:#2478d8e8;--grad:#F88909; "><img src="https://img.icons8.com/fluency/48/000000/mysql-logo.png"/><p style="--grad:#F88909; --grd1:#537CDE; --grad2:#C757BC;">mySQL</p></div>
+            <div class="skill" style="--tc:#2478d8e8;--grad:#000000; "><img src="images/react.png"/><p style="--grad:#F88909; --grd1:#537CDE; --grad2:#000000;">reactJS</p></div>
           </div>
     </section>
     <section class="projects-section" id="projects">
@@ -118,7 +118,7 @@
           </div>
           </p>
           
-          <p class="project-description">This is a free code camp project. It's responsive tribute page.</p>
+          <p class="project-description">I was involve in building a website for a fumigation and hygiene startup business. I was responsible for the front-end development and design.</p>
           <div  class="link-holder"  style="--tc:#565656;">
             <a href="https://ladiesinhygiene.netlify.app/" class ="project-link">explore </a>
           </div>
@@ -141,7 +141,7 @@
 
       </div>
     </section>
-    <section class="contact-section" id="contact">
+    <section class="contact-section" id="contact-section">
           <h2 class="heading" id="skills">Contact<span class="highlight">Me</span></h2>
         <p class="sub-heading">Let's get started</p>
         
@@ -180,6 +180,7 @@
 
 
 <script>
+  import emailjs from "emailjs-com";
   // Contact section
   function sendEmail(e) {
     e.preventDefault();
