@@ -385,6 +385,7 @@ p,
 .project-tags {
   font-family: Consolas;
   display: flex;
+  height: 20px;
   justify-content: center;
 }
 
@@ -392,6 +393,7 @@ p,
   border: 1px solid #565656;
   margin-right: 0.2em;
   width: 50px;
+  height: 15px;
   border-radius: 4px;
   text-align: center;
   text-transform: lowercase;
