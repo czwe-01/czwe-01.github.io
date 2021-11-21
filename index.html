@@ -26,14 +26,22 @@
             // generate a five digit number for the contact_number variable
             this.contact_number.value = (Math.random() * 100000) | 0;
             // these IDs from the previous steps
-            emailjs.sendForm("service_15enpfv", "template_09q2zkr", this).then(
-              function () {
-               alert("SUCCESS!");
-              },
-              function (error) {
-                alert("FAILED...", error);
-              }
-            );
+                emailjs
+      .sendForm(
+        "service_15enpfv",
+        "template_09q2zkr",
+        e.target,
+        "user_7sNHu6IeC6K4aFaPPsNyO"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
           });
       };
     </script>
