@@ -61,7 +61,7 @@ a > span:after {
   width: 0%;
   height: 1px;
   top: 80%;
-  margin-top: -0.5px;
+  margin-top: 2px;
   background: #fff;
 }
 
@@ -91,118 +91,101 @@ a > span:hover:after {
   text-transform: uppercase;
   font: weight 300px;
 }
-#menuToggle {
-  display: block;
+.navbar {
   position: fixed;
-  top: 10px;
-  right: 10px;
-
-  z-index: 2;
-
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-#menuToggle a,
-#menuToggle > .social-media a {
-  text-decoration: none;
-  color: #d19b9b;
-  transition: color 0.3s ease;
-}
-
-#menuToggle a:hover {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
   color: #fff;
-  transform: scale(1.1);
+  background: #000000;
+  padding: 0 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
 }
 
-#menuToggle input {
-  display: block;
-  width: 33px;
-  height: 30px;
-  position: absolute;
-  cursor: pointer;
-
-  opacity: 0;
-  z-index: 4;
-
-  -webkit-touch-callout: none;
+.brand {
+  text-transform: capitalize;
+  font-weight: 100;
 }
-
-#menuToggle > span {
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-
-  background: #e5e5e5;
-  border-radius: 3px;
-
-  z-index: 2;
-
-  transform-origin: 4px 0px;
-
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+#checkbox {
+  display: none;
 }
-
-#menuToggle span:first-child {
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2) {
-  transform-origin: 0% 100%;
-}
-
-#menuToggle input:checked ~ span {
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #ff3b3f;
-}
-
-#menuToggle input:checked ~ span:nth-last-child(3) {
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-#menuToggle input:checked ~ span:nth-last-child(2) {
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
 #menu {
-  top: 45px;
-  position: absolute;
-  width: 300px;
-  margin: -80px 0 0 -240px;
-  padding: 50px;
-  padding-top: 125px;
-  height: 160vh;
-  background: var(--bg);
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-
-  transform-origin: 0% 0%;
-  transform: translate(160%, 0%);
-
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  width: 500px;
 }
 
-#menu li {
-  padding: 10px 0;
-  font-size: 22px;
+.menu-item {
+  text-transform: capitalize;
+  color: #fff;
+  width: 50px;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 10px;
+  width: 100px;
+  position: relative;
+}
+
+.menu-item:hover:not(.active) {
+  opacity: 0.8;
+}
+
+.menu-item.active::before,
+.separator::before {
+  content: " ";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.menu-item.active::after,
+.separator::after {
+  content: " ";
+  position: absolute;
+  margin-top: 2px;
+  left: 0;
+  width: 50%;
+  height: 1px;
+  background-color: #fff;
 }
 
 .fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
   border-radius: 50%;
+  text-decoration: none;
+  height: 45px;
+  width: 45px;
+  margin: 4px;
 }
 
-.social-media {
-  line-height: 90px;
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-github {
+  background: #fff;
+  color: #000;
+  text-align: center;
+  font-size: 35px;
+  margin-top: 10px;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px;
 }
 
 #menuToggle input:checked ~ ul {
@@ -502,8 +485,9 @@ p,
     #370b13,
     #400914,
     #480714,
-    #510414,
-    #5a0013
+    #350b13,
+    #20080e,
+    #000000
   );
 
   margin-top: 100px;
@@ -565,11 +549,118 @@ p,
 
 .footer {
   width: 100%;
-  height: 30px;
+  height: 100px;
   text-transform: capitalize;
   text-align: center;
-  background-color: #5a0013;
+  background-color: #000000;
   line-height: 30px;
   color: #e5e5e5;
   font-size: xx-small;
+}
+footer > p {
+  font-size: xx-small;
+}
+
+@media (max-width: 768px) {
+  #menuToggle {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+
+    z-index: 2;
+
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuToggle a {
+    text-decoration: none;
+    color: #d19b9b;
+    transition: color 0.3s ease;
+  }
+
+  #menuToggle a:hover {
+    color: #fff;
+    transform: scale(2);
+  }
+
+  #menuToggle input {
+    display: block;
+    width: 33px;
+    height: 30px;
+    position: absolute;
+    cursor: pointer;
+
+    opacity: 0;
+    z-index: 4;
+
+    -webkit-touch-callout: none;
+  }
+
+  #menuToggle > span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #e5e5e5;
+    border-radius: 3px;
+
+    z-index: 2;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #ff3b3f;
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  #menu {
+    top: 15px;
+    position: absolute;
+    width: 300px;
+    margin: 0 0 0 -240px;
+    padding: 50px;
+    padding-top: 75px;
+    height: 160vh;
+    background: var(--bg);
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transform-origin: 0% 0%;
+    transform: translate(160%, 0%);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+
+  #menu-item {
+    padding: 5px 0;
+    font-size: 22px;
+  }
 }

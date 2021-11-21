@@ -9,6 +9,38 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/integration
+        emailjs.init("user_7sNHu6IeC6K4aFaPPsNyO");
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function () {
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            // generate a five digit number for the contact_number variable
+            this.contact_number.value = (Math.random() * 100000) | 0;
+            // these IDs from the previous steps
+            emailjs.sendForm("service_15enpfv", "template_09q2zkr", this).then(
+              function () {
+                console.log("SUCCESS!");
+              },
+              function (error) {
+                console.log("FAILED...", error);
+              }
+            );
+          });
+      };
+    </script>
+
     <title>T.Nkambule</title>
   </head>
   <body>
@@ -34,26 +66,10 @@
             <a href="#projects" class="menu-item"><span>Projects</span></a>
           </li>
           <li>
-            <a href="#contact" class="menu-item"><span> Contacts</span></a>
+            <a href="#contact" class="menu-item"><span> Contact Me</span></a>
           </li>
 
-          <li>
-            <div class="social-media">
-              <a
-                href="https://www.linkedin.com/in/thulasizwe-nkambule-843688138/"
-                class="fa fa-linkedin"
-                ><span></span
-              ></a>
-              <a href="https://github.com/czwe-01" class="fa fa-github"
-                ><span></span
-              ></a>
-              <a
-                href="https://www.tnkambule980115@gmail.com"
-                class="fa fa-envelope"
-                ><span></span
-              ></a>
-            </div>
-          </li>
+          <li></li>
         </ul>
       </div>
     </nav>
@@ -81,11 +97,12 @@
             />
           </div>
           <div class="info">
-            I am an undergraduate looking to create the best partnership with a business looking to excel online.
+            I am an undergraduate looking to create the best partnership with a
+            business looking to excel online.
           </div>
         </div>
       </div>
-      <a href="#contact-section" class="btn home-btn"> contact </a>
+      <a href="#contact-section" class="btn home-btn"> contact Me</a>
     </section>
     <section class="about" id="about">
       <h2 class="heading">about <span class="highlight">me</span></h2>
@@ -240,59 +257,56 @@
       <h2 class="heading">Contact<span class="highlight">Me</span></h2>
       <p class="sub-heading">Let's get started</p>
 
-      <form class="contact-form" onSubmit="sendEmail">
+      <form class="contact-form" id="contact-form">
         <div class="name">
           <input
             type="text"
-            required
+            requird
             class="first-name"
-            placeholder="first name"
-            name="name"
+            name="user_name"
+            placeholder="Name"
           />
+
           <input
             type="text"
             required
             class="c"
-            placeholder="Last name"
+            placeholder="Lastname"
             name="last_name"
           />
         </div>
-        <input type="email" class="email" placeholder="email" name="email" />
+
+        <input
+          type="email"
+          required
+          class="email"
+          name="user_email"
+          placeholder="email"
+        />
+
         <textarea
+          name="message"
           class="message"
           placeholder="message"
-          required
-          name="message"
         ></textarea>
-        <input type="submit" class="btn contact-btn" value="Contact" />
+
+        <input type="submit" value="Send" class="contact-btn" />
       </form>
     </section>
 
-    <footer class="footer">made with love by Thulasizwe Nkambule</footer>
+    <footer class="footer">
+      <div class="social-media">
+        <a
+          href="https://www.linkedin.com/in/thulasizwe-nkambule-843688138/"
+          class="fa fa-linkedin"
+          ><span></span
+        ></a>
+        <a href="https://github.com/czwe-01" class="fa fa-github"
+          ><span></span
+        ></a>
+      </div>
 
-    <script>
-      import emailjs from "emailjs-com";
-      // Contact section
-      function sendEmail(e) {
-        e.preventDefault();
-
-        emailjs
-          .sendForm(
-            "service_15enpfv",
-            "template_09q2zkr",
-            e.target,
-            "user_7sNHu6IeC6K4aFaPPsNyO"
-          )
-          .then(
-            (result) => {
-              console.log(result.text);
-            },
-            (error) => {
-              console.log(error.text);
-            }
-          );
-        e.target.reset();
-      }
-    </script>
+      <p>made with love by Thulasizwe Nkambule</p>
+    </footer>
   </body>
 </html>
