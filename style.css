@@ -252,7 +252,7 @@ p,
   width: fit-content;
   display: block;
   font-size: medium;
-  margin: 10px 5px;
+  margin: 5px 10px;
   margin-left: auto;
   text-transform: capitalize;
   position: relative;
@@ -277,9 +277,9 @@ p,
   content: "";
   position: absolute;
   top: 0;
-  left: -100px;
-  width: 100px;
-  height: 2px;
+  left: -300px;
+  width: 300px;
+  height: 1px;
   background: #f3eed9;
 }
 
@@ -481,58 +481,41 @@ p,
   padding: 50px 10vw;
 }
 .skills {
+  padding-top: 150px;
   font-family: Consolas;
-  display: flex;
-  flex-direction: column;
-  padding: 1.5em;
-  justify-content: space-between;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .skill {
-  margin-top: 2em;
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.77);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
   height: max-content;
-  width: 100%;
-  border-radius: 10px;
   text-transform: lowercase;
   font-size: x-small;
   display: flex;
+  flex-direction: column;
+  background: var(--grad);
 }
 .skill > p {
   color: #fff;
-  padding: 10px;
   text-align: justify;
   width: 100%;
-  padding-left: 38px;
-  border-radius: 0 10px 10px 0;
+  margin: 10px;
 }
 
 .skill > img {
-  width: 48px;
-  height: 48px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0);
+  margin: 10px;
+  width: 60px;
+  height: 60px;
   border: 1px solid var(--grad);
   background: var(--grad);
-  border-radius: 10px 0 0 10px;
   /* filter: grayscale(100%); */
 }
 
 /* Contact Section */
 .contact-section {
   padding: 50px 10vw;
-  background-image: linear-gradient(
-    to bottom,
-    #370b13,
-    #400914,
-    #480714,
-    #350b13,
-    #20080e,
-    #000000
-  );
 }
 .contact-form {
   margin: 10px;
@@ -814,5 +797,20 @@ footer > p {
   .project-card:hover ~ .project-card,
   .project-card:focus-within ~ .project-card {
     transform: translateY(calc((var(--distance)) * -1));
+  }
+
+  .skills {
+    grid-template-columns: 100%;
+  }
+  .skill {
+    flex-direction: row;
+    width: 100%;
+  }
+  .name {
+    flex-direction: column;
+    width: 100%;
+  }
+  .name input {
+    width: 100%;
   }
 }
