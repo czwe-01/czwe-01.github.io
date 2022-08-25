@@ -20,7 +20,7 @@ const skills = [
   },
   {
     name: "css",
-    logo: "public/public/images/css.png",
+    logo: "public/images/css.png",
     attributeLink:
       '<a href="https://www.flaticon.com/free-icons/css" title="css icons">Css icons created by Flat Icons - Flaticon</a>',
   },
