@@ -1,49 +1,49 @@
 const skills = [
   {
     name: "javascript",
-    logo: "images/javascript.png",
+    logo: "public/images/javascript.png",
     attributeLink:
       '<a href="https://www.flaticon.com/free-icons/javascript" title="javascript icons">Sql icons created by Flat Icons - Flaticon</a>',
   },
   {
     name: "html",
-    logo: "images/html.png",
+    logo: "public/images/html.png",
     attributeLink:
       '<a href="https://www.flaticon.com/free-icons/html" title="html icons">Html icons created by Flat Icons - Flaticon</a>',
   },
 
   {
     name: "sql",
-    logo: "images/sql.png",
+    logo: "public/images/sql.png",
     attributeLink:
       '<a href="https://www.flaticon.com/free-icons/sql" title="sql icons">Sql icons created by Flat Icons - Flaticon</a>',
   },
   {
     name: "css",
-    logo: "images/css.png",
+    logo: "public/public/images/css.png",
     attributeLink:
       '<a href="https://www.flaticon.com/free-icons/css" title="css icons">Css icons created by Flat Icons - Flaticon</a>',
   },
   {
     name: "api",
-    logo: "images/laptop.png",
+    logo: "public/images/laptop.png",
     attributeLink:
       '<a href="https://www.flaticon.com/free-icons/technology-integration" title="technology integration icons">Technology integration icons created by Flat Icons - Flaticon</a>',
   },
   {
     name: "git",
-    logo: "images/git.png",
+    logo: "public/images/git.png",
     attributeLink:
       '<a href="https://www.flaticon.com/free-icons/git" title="git icons">Git icons created by Freepik - Flaticon</a>',
   },
   {
     name: "jasmine",
-    logo: "images/jasmine.png",
+    logo: "public/images/jasmine.png",
     attributeLink: "",
   },
   {
     name: "nodejs",
-    logo: "images/nodejs.png",
+    logo: "public/images/nodejs.png",
     attributeLink:
       '<a href="https://www.flaticon.com/free-icons/nodejs" title="nodejs icons">Nodejs icons created by Freepik - Flaticon</a>',
   },
