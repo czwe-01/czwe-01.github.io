@@ -1,5 +1,26 @@
 {
   "dependencies": {
     "webpack": "^5.74.0"
-  }
+  },
+  "name": "czwe-01.github.io",
+  "description": "my portfolio",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "devDependencies": {
+    "webpack-cli": "^4.10.0"
+  },
+  "scripts": {
+    "test": "jasmine",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/czwe-01/czwe-01.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/czwe-01/czwe-01.github.io/issues"
+  },
+  "homepage": "https://github.com/czwe-01/czwe-01.github.io#readme"
 }

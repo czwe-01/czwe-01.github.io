@@ -829,6 +829,9 @@ footer > p {
     transform: translateY(calc((var(--distance)) * -1));
   }
 
+  .skill {
+    filter: none;
+  }
   .skills {
     grid-template-columns: 100%;
   }
