@@ -1,4 +1,5 @@
 const { skills, projects } = require("./data");
+
 // menu toggle
 window.addEventListener("click", function (event) {
   if (
@@ -26,8 +27,7 @@ skills.forEach((skill) => {
 });
 
 const projectsSection = document.querySelector(".project-container");
-let projectsAsTheyCome = projects.reverse();
-projectsAsTheyCome.forEach((project) => {
+projects.forEach((project) => {
   let str = "";
   for (let i = 0; i < project.techStack.length; i++) {
     str = str + `<div class="project-tag">${project.techStack[i]}</div>`;
