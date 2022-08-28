@@ -34,7 +34,7 @@ projects.forEach((project) => {
   }
   const div = document.createElement("div");
   div.classList.add("project-card");
-  div.innerHTML = ` <p class="project-year">${project.year}</p>
+  const innerHTML = ` <p class="project-year">${project.year}</p>
           <div class="project">
             ${project.name}
             <div class="project-tags">
@@ -44,12 +44,37 @@ projects.forEach((project) => {
           <p class="project-description">
             ${project.description}
           </p>
-          <div class="link-holder"">
+          <div class="link-holder" id="${project.name}">
             <a href=${project.url} class="project-link"
-            target=”_blank”
+            target="_blank"
               >explore
             </a>
           </div>`;
-
+  div.innerHTML = innerHTML;
   projectsSection.append(div);
+  const explore = document.getElementById(project.name);
+
+  explore.onmouseover = function () {
+    mouseOver();
+  };
+  explore.onmouseout = function () {
+    mouseOut();
+  };
+  const children = div.children;
+
+  function mouseOver() {
+    div.style.backgroundImage = `url(${project.image})`;
+    div.style.backgroundSize = "contain";
+    div.style.backgroundRepeat = "no-repeat";
+    for (let i = 0; i < children.length - 1; i++) {
+      children[i].style.visibility = "hidden";
+    }
+  }
+
+  function mouseOut() {
+    div.style.backgroundImage = `url("")`;
+    for (let i = 0; i < children.length - 1; i++) {
+      children[i].style.visibility = "visible";
+    }
+  }
 });

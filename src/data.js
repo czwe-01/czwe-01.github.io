@@ -57,6 +57,7 @@ const projects = [
     url: "https://codepen.io/czwe_01/pen/xBQqrj",
     description:
       "This project is a freeCodeCamp project for Responsive Web design certification. It is a tribute of James Ingrams",
+    image: "public/images/projects/tributePage.png",
   },
   {
     name: "Build A Survey Form",
@@ -65,6 +66,7 @@ const projects = [
     url: "https://codepen.io/czwe_01/pen/GewrKO",
     description:
       "This project is a freeCodeCamp project for Responsive Web design certification. It is a survey form",
+    image: "public/images/projects/surveyForm.png",
   },
   {
     name: "Technical Documentation",
@@ -73,6 +75,7 @@ const projects = [
     url: "https://codepen.io/czwe_01/pen/WmKYqR",
     description:
       "This project is a freeCodeCamp project for Responsive Web design certification. It is a technical documentation website",
+    image: "public/images/projects/technicalDoc.png",
   },
   {
     name: "Ladies In Hygiene",
@@ -81,6 +84,7 @@ const projects = [
     url: "https://ladiesinhygiene.netlify.app/",
     description:
       "I was involved in building a website for a fumigation and hygiene startup business. I was responsible for the front-end development and design.",
+    image: "public/images/projects/ladiesInHygiene.png",
   },
   {
     name: "Personal portfolio",
@@ -89,6 +93,7 @@ const projects = [
     url: "https://czwe-01.github.io/",
     description:
       "This is the website you are currently on, my personal portfolio",
+    image: "public/images/projects/portfolio.png",
   },
 ];
 

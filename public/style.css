@@ -470,6 +470,10 @@ p {
   text-align: end;
   bottom: 0;
 }
+.project-link:hover {
+  background-color: #dddddd;
+  color: #1d1d1d;
+}
 .project-link {
   padding: 10px 20px;
   text-decoration: none;
@@ -482,12 +486,6 @@ p {
 }
 
 .project-link:hover {
-  border: 1px solid #fff;
-  color: #d3d3d3;
-}
-
-.project-link:hover .project-card {
-  background-color: rgba(0, 0, 0, 0.589);
 }
 .skill-section {
   margin: 2px;
