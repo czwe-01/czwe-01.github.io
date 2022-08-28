@@ -8,11 +8,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="public/style.css" />
-    <script>
-      function submit() {
-        alert("Thank you");
-      }
-    </script>
     <title>T.Nkambule</title>
   </head>
   <body>
@@ -45,36 +40,19 @@
         </ul>
       </div>
     </nav>
-    <section
-      class="page-section"
-      id="home"
-      style="--bg: #efefef; --tc: #6b7a8f"
-    >
-      <div class="page-content">
-        <div class="page-intro">
-          <h1 class="heading">
-            <span class="highlight">Hi, </span>i am Thulasizwe
-          </h1>
-          <p
-            class="home-sub-heading"
-            style="--bg: #a9a9a9; --tc: #dfdce3; z-index: 2"
-          >
-            Web Dev
-          </p>
-          <div>
-            <img
-              src="public/images/home-pic.png"
-              alt="logo image"
-              class="home-image"
-            />
-          </div>
-          <div class="info">
-            <p>
-              Mortivated web developer recruit at Umuzi.org. Passionate about building first-class web applications. Developed a website for a local startup company while at Sefako Makgatho University.            </p>
-          </div>
-        </div>
+    <section class="home" id="home">
+      <div class="hero-content">
+        <h1 class="hero-heading">
+          <span class="highlight">Hi, </span>I am Thulasizwe
+        </h1>
+        <p class="profession">Web Developer</p>
+        <p class="info">
+          Mortivated web developer recruit at Umuzi.org. Passionate about
+          building first-class web applications.
+        </p>
+        <a href="#contact" class="btn">contact</a>
       </div>
-      <a href="#contact" class="btn home-btn"> contact Me</a>
+      <img src="/public/images/home-pic.png" class="image" alt="" />
     </section>
     <section class="about" id="about">
       <h2 class="heading">about <span class="highlight">me</span></h2>
@@ -93,15 +71,16 @@
         </div>
         <div class="right-col">
           <p class="about-para">
-            My name is Thulasizwe Nkambule, Innovative and task-driven individual with a computer
-             science degree and a 1+ years of experience in web design and development.
-              Equiped with technical skills from Umuzi bootcamp and other online platforms 
-              such as freeCodeCamp, soloLearn and hackerrank.
-              Proficient in working with apis, creating databases, creating user interfaces, writting and testing code,
-             trouble shooting issues, and implementing new eatures based on feedback. I will make sure that I take 
-            responsibility for my ongoing
-            professional development. When I'm not coding I'm a big soccer fan
-            both on and off the field.
+            My name is Thulasizwe Nkambule, Innovative and task-driven
+            individual with a computer science degree and a 1+ years of
+            experience in web design and development. Equiped with technical
+            skills from Umuzi bootcamp and other online platforms such as
+            freeCodeCamp, soloLearn and hackerrank. Proficient in working with
+            apis, creating databases, creating user interfaces, writting and
+            testing code, trouble shooting issues, and implementing new eatures
+            based on feedback. I will make sure that I take responsibility for
+            my ongoing professional development. When I'm not coding I'm a big
+            soccer fan both on and off the field.
           </p>
         </div>
       </div>
@@ -125,8 +104,7 @@
       </h2>
       <p class="sub-heading" style="--bg: #1d1d1d; --tc: #fff">My projects</p>
       <div class="separator"></div>
-      <div class="project-container">
-      </div>
+      <div class="project-container"></div>
     </section>
     <section class="contact-section" id="contact">
       <h2 class="heading">Contact<span class="highlight"> Me</span></h2>
@@ -168,7 +146,6 @@
 
         <input
           type="hidden"
-          required
           value="https://czwe-01.github.io/public/thankyou.html"
           name="_next"
         />
@@ -196,6 +173,6 @@
 
       <p>made with love by Thulasizwe Nkambule</p>
     </footer>
-    <script src="dist/main.js"></script
+    <script src="dist/main.js"></script>
   </body>
 </html>

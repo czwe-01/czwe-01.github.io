@@ -46,6 +46,7 @@ projects.forEach((project) => {
           </p>
           <div class="link-holder"">
             <a href=${project.url} class="project-link"
+            target=”_blank”
               >explore
             </a>
           </div>`;

@@ -1,49 +1,49 @@
 const skills = [
   {
     name: "javascript",
-    logo: "public/images/javascript.png",
+    logo: "public/images/skills/javascript.png",
     attributeLink:
       '<a href="https://www.flaticon.com/free-icons/javascript" title="javascript icons">Sql icons created by Flat Icons - Flaticon</a>',
   },
   {
     name: "html",
-    logo: "public/images/html.png",
+    logo: "public/images/skills/html.png",
     attributeLink:
       '<a href="https://www.flaticon.com/free-icons/html" title="html icons">Html icons created by Flat Icons - Flaticon</a>',
   },
 
   {
     name: "sql",
-    logo: "public/images/sql.png",
+    logo: "public/images/skills/sql.png",
     attributeLink:
       '<a href="https://www.flaticon.com/free-icons/sql" title="sql icons">Sql icons created by Flat Icons - Flaticon</a>',
   },
   {
     name: "css",
-    logo: "public/images/css.png",
+    logo: "public/images/skills/css.png",
     attributeLink:
       '<a href="https://www.flaticon.com/free-icons/css" title="css icons">Css icons created by Flat Icons - Flaticon</a>',
   },
   {
     name: "api",
-    logo: "public/images/laptop.png",
+    logo: "public/images/skills/laptop.png",
     attributeLink:
       '<a href="https://www.flaticon.com/free-icons/technology-integration" title="technology integration icons">Technology integration icons created by Flat Icons - Flaticon</a>',
   },
   {
     name: "git",
-    logo: "public/images/git.png",
+    logo: "public/images/skills/git.png",
     attributeLink:
       '<a href="https://www.flaticon.com/free-icons/git" title="git icons">Git icons created by Freepik - Flaticon</a>',
   },
   {
     name: "jasmine",
-    logo: "public/images/jasmine.png",
+    logo: "public/images/skills/jasmine.png",
     attributeLink: "",
   },
   {
     name: "nodejs",
-    logo: "public/images/nodejs.png",
+    logo: "public/images/skills/nodejs.png",
     attributeLink:
       '<a href="https://www.flaticon.com/free-icons/nodejs" title="nodejs icons">Nodejs icons created by Freepik - Flaticon</a>',
   },
