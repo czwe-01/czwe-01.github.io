@@ -1,3 +1,9 @@
+const techStack = {
+  all: "all",
+  html: "html",
+  css: "css",
+  js: "js",
+};
 const skills = [
   {
     name: "javascript",
@@ -6,7 +12,7 @@ const skills = [
       '<a href="https://www.flaticon.com/free-icons/javascript" title="javascript icons">Sql icons created by Flat Icons - Flaticon</a>',
   },
   {
-    name: "html",
+    name: techStack.html,
     logo: "public/images/skills/html.png",
     attributeLink:
       '<a href="https://www.flaticon.com/free-icons/html" title="html icons">Html icons created by Flat Icons - Flaticon</a>',
@@ -19,7 +25,7 @@ const skills = [
       '<a href="https://www.flaticon.com/free-icons/sql" title="sql icons">Sql icons created by Flat Icons - Flaticon</a>',
   },
   {
-    name: "css",
+    name: techStack.css,
     logo: "public/images/skills/css.png",
     attributeLink:
       '<a href="https://www.flaticon.com/free-icons/css" title="css icons">Css icons created by Flat Icons - Flaticon</a>',
@@ -53,7 +59,7 @@ const projects = [
   {
     name: "My Tribute Page",
     year: "2020",
-    techStack: ["html", "css"],
+    stack: [techStack.html, techStack.css],
     url: "https://codepen.io/czwe_01/pen/xBQqrj",
     description:
       "This project is a freeCodeCamp project for Responsive Web design certification. It is a tribute of James Ingrams",
@@ -62,7 +68,7 @@ const projects = [
   {
     name: "Build A Survey Form",
     year: "2020",
-    techStack: ["html", "css"],
+    stack: [techStack.html, techStack.css],
     url: "https://codepen.io/czwe_01/pen/GewrKO",
     description:
       "This project is a freeCodeCamp project for Responsive Web design certification. It is a survey form",
@@ -71,7 +77,7 @@ const projects = [
   {
     name: "Technical Documentation",
     year: "2020",
-    techStack: ["html", "css"],
+    stack: [techStack.html, techStack.css],
     url: "https://codepen.io/czwe_01/pen/WmKYqR",
     description:
       "This project is a freeCodeCamp project for Responsive Web design certification. It is a technical documentation website",
@@ -80,7 +86,7 @@ const projects = [
   {
     name: "Ladies In Hygiene",
     year: "2020",
-    techStack: ["html", "css", "js"],
+    stack: [techStack.html, techStack.css, techStack.js],
     url: "https://ladiesinhygiene.netlify.app/",
     description:
       "I was involved in building a website for a fumigation and hygiene startup business. I was responsible for the front-end development and design.",
@@ -89,7 +95,7 @@ const projects = [
   {
     name: "Personal portfolio",
     year: "2021",
-    techStack: ["html", "css", "js"],
+    stack: [techStack.html, techStack.css, techStack.js],
     url: "https://czwe-01.github.io/",
     description:
       "This is the website you are currently on, my personal portfolio",
@@ -97,4 +103,4 @@ const projects = [
   },
 ];
 
-module.exports = { skills, projects };
+module.exports = { skills, projects, techStack };
