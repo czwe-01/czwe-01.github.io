@@ -11,35 +11,37 @@
     <title>T.Nkambule</title>
   </head>
   <body>
-    <nav class="navbar" style="--bg: #000000; --tc: #fff">
-      <div class="logo"><p>TN</p></div>
-      <div id="menuToggle">
-        <input type="checkbox" id="checkbox" />
-        <span></span>
-        <span></span>
-        <span></span>
+    <header>
+      <nav class="navbar" style="--bg: #000000; --tc: #fff">
+        <div class="logo"><p>TN</p></div>
+        <div id="menuToggle">
+          <input type="checkbox" id="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
 
-        <ul id="menu">
-          <li class="active">
-            <a href="#home" class="menu-item"><span> Home </span></a>
-          </li>
-          <li>
-            <a href="#about" class="menu-item"><span> About </span></a>
-          </li>
-          <li>
-            <a href="#skills" class="menu-item"><span> Skills </span></a>
-          </li>
-          <li>
-            <a href="#projects" class="menu-item"><span>Projects</span></a>
-          </li>
-          <li>
-            <a href="#contact" class="menu-item"><span> Contact Me</span></a>
-          </li>
+          <ul id="menu">
+            <li>
+              <a href="#home" class="menu-item"><span> Home </span></a>
+            </li>
+            <li>
+              <a href="#about" class="menu-item"><span> About </span></a>
+            </li>
+            <li>
+              <a href="#skills" class="menu-item"><span> Skills </span></a>
+            </li>
+            <li>
+              <a href="#projects" class="menu-item"><span>Projects</span></a>
+            </li>
+            <li>
+              <a href="#contact" class="menu-item"><span> Contact Me</span></a>
+            </li>
 
-          <li></li>
-        </ul>
-      </div>
-    </nav>
+            <li></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <section class="home" id="home">
       <div class="hero-content">
         <h1 class="hero-heading">
@@ -61,7 +63,7 @@
       </p>
       <div class="separator"></div>
 
-      <div class="about-me-container">
+      <article class="about-me-container">
         <div class="left-col">
           <img
             src="public/images/pic6.jpg"
@@ -83,7 +85,7 @@
             soccer fan both on and off the field.
           </p>
         </div>
-      </div>
+      </article>
       <a href="public/Tnkambule.pdf" class="btn download-btn" download>
         download cv
       </a>
@@ -104,6 +106,7 @@
       </h2>
       <p class="sub-heading" style="--bg: #1d1d1d; --tc: #fff">My projects</p>
       <div class="separator"></div>
+      <div><ul class="filters"></ul></div>
       <div class="project-container"></div>
     </section>
     <section class="contact-section" id="contact">
