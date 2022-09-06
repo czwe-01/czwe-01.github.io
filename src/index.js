@@ -55,8 +55,6 @@ function createProjects(listOfProjects, filter) {
     listOfProjects = checkFilter(listOfProjects, filter);
   }
 
-  console.log(listOfProjects);
-
   listOfProjects.forEach((project) => {
     let str = "";
     for (let i = 0; i < project.stack.length; i++) {
