@@ -569,9 +569,7 @@ p {
   width: 49%;
   margin: 0;
 }
-.email {
-  text-transform: lowercase !important;
-}
+
 .contact-form .btn {
   display: block;
   margin: auto;
