@@ -15,6 +15,13 @@ window.addEventListener("click", function (event) {
   }
 });
 
+const portfolioBtn = document.querySelector(".portfolio-btn");
+
+portfolioBtn.addEventListerner("click", (event)=>{
+  const link = "https://public-portfolio-2ac34.web.app/"
+  window.open(link, '_blank');
+})
+
 const skillSection = document.querySelector(".skills");
 skills.forEach((skill) => {
   const div = document.createElement("div");
