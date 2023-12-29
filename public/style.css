@@ -209,10 +209,10 @@ a > span:hover:after {
 .portfolio-btn {
    padding: 0.62em;
   font-size: var(--fs-6);
-  background: linear-gradient(#757575, var(--white-2)) padding-box !important;
-  border: 1.2px solid var(--orange-yellow-crayola);
+  background: linear-gradient(#757575, #fafafa) padding-box;
+  border: 1.2px solid #ffdb70;
   border-radius: 10px;
-  box-shadow: var(--shadow-4);
+  box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .image {
   width: 40%;
