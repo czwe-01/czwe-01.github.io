@@ -206,6 +206,14 @@ a > span:hover:after {
 .page-section h1 {
   font-size: 5.5rem;
 }
+.portfolio-btn {
+   padding: 0.62em;
+  font-size: var(--fs-6);
+  background: linear-gradient(#757575, var(--white-2)) padding-box !important;
+  border: 1.2px solid var(--orange-yellow-crayola);
+  border-radius: 10px;
+  box-shadow: var(--shadow-4);
+}
 .image {
   width: 40%;
   border-radius: 50%;
