@@ -212,6 +212,7 @@ a > span:hover:after {
   background: linear-gradient(#757575, #fafafa) padding-box;
   border: 1.2px solid #ffdb70;
   border-radius: 10px;
+  text-decoration: "none;
   color: #1d1d1d;
   box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
